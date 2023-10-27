@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 p {
   font-family: 'Titillium Web', sans-serif; 
 }
@@ -8,7 +12,7 @@ h1 {
 
 .intro-body {
     display: inline-block;
-    height: 550px;
+    height: 80vh;
 }
 
 .backwrap {
@@ -113,7 +117,7 @@ h1 {
     }
   }
 
-  .intro-words {
+  .intro-words{
     z-index: 20;
     color: white;
     font-size: 30px;
@@ -121,20 +125,28 @@ h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 70px;
+    padding-top: 6%;
+    line-height: 150%;
+  }
+
+  #Hi {
+    z-index: 20;
+    color: white;
+    width: 100%;
+    font-size: 45px;
     line-height: 150%;
   }
 
   .languages {
     height: 100px;
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding-bottom: 40px;
   }
 
-  .Java, .HTML, .CSS, .python, .SQL, .Assembly {
+  .Java, .HTML, .CSS, .python, .SQL, .Assembly, .git, .maven {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
@@ -156,5 +168,68 @@ h1 {
     color: black;
     font-size: 22px;
     text-align: center;
-
+  } 
+  @media only screen and (max-width: 250px) {
+    .intro-words {
+      width: 100%;
+      line-height: 110%;
+      padding-top: 40%;
+    }
+    #Hi {
+      font-size: 20px;
+    }
+    #who-I-am {
+      font-size: 15px;
+    }
+    .languages {
+      width: 100%;
+    }
+  }
+  
+  /* Extra small devices (phones, 251px to 450px) */
+  @media only screen and (min-width: 251px) and (max-width: 450px) {
+    .intro-words {
+      width: 100%;
+      line-height: 110%;
+      padding-top: 35%;
+    }
+    #Hi {
+      font-size: 30px;
+    }
+    #who-I-am {
+      font-size: 25px;
+    }
+    .languages {
+      width: 100%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 451px to 600px) */
+  @media only screen and (min-width: 451px) and (max-width: 600px) {
+    .intro-words {
+      width: 80%;
+      line-height: 125%;
+      padding-top: 10%;
+    }
+    .languages {
+      width: 90%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 601px to 768px) */
+  @media only screen and (min-width: 601px) and (max-width: 800px) {
+    .intro-words {
+      width: 60%;
+      line-height: 125%;
+      padding-top: 10%;
+    }
+    #Hi {
+      font-size: 40px;
+    }
+    #who-I-am {
+      font-size: 28px;
+    }
+    .languages {
+      width: 90%;
+    }
   }
